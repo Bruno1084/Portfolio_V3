@@ -1,0 +1,51 @@
+#education {
+    margin-bottom: 3rem;
+}
+
+.education-tittle--container {
+    margin-bottom: 2rem;
+}
+
+.education-tittle--container > h4 {
+    font-size: 1.3rem;
+}
+
+.education--container {
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--border-color);
+}
+
+.education-box-tittle--container {
+    display: grid;
+    gap: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.education-box-ubication > p {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+}
+
+.education-box-tittle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-box-tittle > h4 {
+    font-size: 1.1rem;
+}
+
+.education-box-tittle > p {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+}
+
+.education-box-college > p {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+}
+
+.education-box-description--container > p {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}

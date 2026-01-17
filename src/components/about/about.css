@@ -1,0 +1,21 @@
+#about {
+    margin-bottom: 4rem;
+}
+
+.about-tittle--container > h4 {
+    font-size: 1.3rem;
+}
+
+.about-tittle--container {
+    margin-bottom: 2rem;
+}
+
+.about-desc--container {
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+}
+
+.about-desc--container > p {
+    margin: 16px 0;
+    line-height: 1.4rem;
+}
