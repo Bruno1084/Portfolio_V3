@@ -59,6 +59,7 @@ main {
 
 #main--container {
   max-width: 720px;
+  width: 100%;
 }
 
 .reveal {

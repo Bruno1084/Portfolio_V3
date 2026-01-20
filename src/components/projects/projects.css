@@ -2,11 +2,11 @@
     margin-bottom: 4rem;
 }
 
-.projects-tittle--container {
+.projects-title--container {
     margin-bottom: 2rem;
 }
 
-.projects-tittle--container > h4 {
+.projects-title--container > h4 {
     font-size: 1.3rem;
 }
 
@@ -27,6 +27,11 @@
 .project-box--container:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.project-box--container > a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-box-display {
