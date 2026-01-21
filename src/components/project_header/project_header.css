@@ -33,19 +33,23 @@
 #projectHeader > .header-resume {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 #projectHeader > .header-resume > .header-resume-box--container {
     border-left: 1px solid var(--border-color);
     color: var(--secondary-color);
-    padding-left: 1rem;
+    padding: 0 1rem;
     margin: 1rem 0;
 }
 
-#projectHeader > .header-resume > .header-resume-box--container > p {
+#projectHeader > .header-resume > .header-resume-box--container > p, h5 {
+    font-weight: 500;
     padding: 4px 0;
     font-size: 0.9rem;
+}
+
+#projectHeader > .header-resume > .header-resume-box--container > p {
+    color: var(--primary-color);
 }
 
 @media (max-width: 650px) {
