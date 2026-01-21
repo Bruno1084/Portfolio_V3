@@ -1,5 +1,4 @@
 #projectDescription > .description-image--container {
-    border: 1px solid gray;
     border-radius: 8px;
     aspect-ratio: 16 / 9;
     overflow: hidden;

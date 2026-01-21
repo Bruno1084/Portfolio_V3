@@ -22,7 +22,6 @@ export function ProjectPage(): ReactNode {
                     <Project_header 
                         title={project.title}
                         subtitle={project.subtitle}
-                        website_url={project.website_url}
                         repository_url={project.repository_url}
                         description={project.description}
                         category={project.category}

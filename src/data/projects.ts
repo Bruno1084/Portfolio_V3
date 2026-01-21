@@ -9,7 +9,7 @@ export const projects: Project[] = [
     description:
       "Plataforma web orientada a la compra y gestión de pasajes, con un flujo de usuario simple y enfocado en la experiencia de reserva.",
     repository_url: "https://github.com/Bruno1084/NC_Wings",
-    website_url: "gireoahjrih",
+    website_url: "",
     category: "Reserva de Pasajes",
     year: 2020,
     paragraph:
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description:
       "Aplicación destinada al control y gestión de stock, orientada a pequeños comercios o emprendimientos.",
     repository_url: "https://github.com/Bruno1084/Java_StockApp",
-    website_url: "gireoahjrih",
+    website_url: "",
     category: "Aplicación de Stock",
     year: 2020,
     paragraph:
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     description:
       "Sistema web orientado a la gestión de envíos y pedidos, pensado para optimizar procesos logísticos.",
     repository_url: "https://github.com/Bruno1084/VeryDeli-App",
-    website_url: "gireoahjrih",
+    website_url: "",
     category: "Web de Mudanzas",
     year: 2020,
     paragraph:
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     description:
       "Sitio web de comercio electrónico enfocado en la venta de indumentaria, con una estética clara y navegación sencilla.",
     repository_url: "https://github.com/Bruno1084/El-Buho-Web.github.io",
-    website_url: "gireoahjrih",
+    website_url: "",
     category: "Ecommerce Web",
     year: 2020,
     paragraph:
