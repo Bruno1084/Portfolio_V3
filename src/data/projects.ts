@@ -11,7 +11,7 @@ export const projects: Project[] = [
     repository_url: "https://github.com/Bruno1084/NC_Wings",
     website_url: "",
     category: "Reserva de Pasajes",
-    year: 2020,
+    year: 2024,
     paragraph:
       "NCWings fue desarrollado como un proyecto enfocado en simular el funcionamiento de una aerolínea. Permite a los usuarios explorar destinos, seleccionar vuelos y realizar reservas de manera intuitiva. El proyecto me permitió trabajar sobre la organización de vistas, la lógica de negocio y la estructura general de una aplicación web orientada al usuario final.",
     img_1: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/NCWings_img1.jpg",
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     repository_url: "https://github.com/Bruno1084/Java_StockApp",
     website_url: "",
     category: "Aplicación de Stock",
-    year: 2020,
+    year: 2024,
     paragraph:
       "StockApp es una aplicación desarrollada para facilitar la gestión de productos, permitiendo registrar ingresos, egresos y consultar el estado del inventario. El proyecto se enfocó en la lógica de negocio y la persistencia de datos, reforzando conceptos clave de programación estructurada y orientación a objetos.",
     img_1: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/StockApp_img1.jpg",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     repository_url: "https://github.com/Bruno1084/VeryDeli-App",
     website_url: "",
     category: "Web de Mudanzas",
-    year: 2020,
+    year: 2024,
     paragraph:
       "VeryDeli fue concebido como un sistema para centralizar la información relacionada con envíos y entregas. El proyecto aborda la organización de pedidos, el seguimiento de estados y la presentación clara de la información al usuario. Fue una experiencia clave para trabajar sobre estructuras escalables y separación de responsabilidades.",
     img_1: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/VeryDeliWeb_img1.jpg",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     repository_url: "https://github.com/Bruno1084/El-Buho-Web.github.io",
     website_url: "",
     category: "Ecommerce Web",
-    year: 2020,
+    year: 2023,
     paragraph:
       "El Buho Web es un ecommerce desarrollado con el objetivo de simular una tienda online de ropa. Incluye vistas de productos, estructura de catálogo y una experiencia de navegación orientada al usuario. El proyecto me permitió profundizar en diseño responsive, organización de componentes y presentación visual de contenido.",
     img_1: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/ElBuhoWeb_img1.jpg",
