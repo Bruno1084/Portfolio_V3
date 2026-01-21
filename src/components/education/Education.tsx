@@ -23,7 +23,7 @@ export function Education(): ReactNode {
                         </div>
                     </div>
                     <div className="education-box-description--container">
-                        <p>Enfocado en el desarrollo de software para web y escritorio. Adquirí conocimientos en backend y frontend con metodologías profesionales y de trabajo en equipo</p>
+                        <p>Enfocado en el desarrollo de software para web y escritorio. Adquirí conocimientos en backend y frontend con metodologías profesionales y de trabajo en equipo.</p>
                     </div>
                 </div>
             </div>
