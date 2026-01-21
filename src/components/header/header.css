@@ -104,7 +104,7 @@ header {
     gap: 16px;
 }
 
-.navbar-links button {
+.navbar-links a {
     background: none;
     border: none;
     color: white;
@@ -113,7 +113,7 @@ header {
     opacity: 0.9;
 }
 
-.navbar-links button:hover {
+.navbar-links a:hover {
     opacity: 1;
 }
 
