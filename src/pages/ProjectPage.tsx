@@ -6,33 +6,31 @@ import { Navigate, useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 
 export function ProjectPage(): ReactNode {
-    const { slug } = useParams<{ slug: string }>();
+  const { slug } = useParams<{ slug: string }>();
 
-    const project = projects.find(p => p.slug === slug);
+  const project = projects.find((p) => p.slug === slug);
 
-    if (!project) {
-        return <Navigate to="/projects" replace />;
-    };
+  if (!project) {
+    return <Navigate to="/projects" replace />;
+  }
 
-    return (
-        <>
-            <main>
-                <Header />
-                <div id="main--container">
-                    <Project_header 
-                        title={project.title}
-                        subtitle={project.subtitle}
-                        repository_url={project.repository_url}
-                        description={project.description}
-                        category={project.category}
-                        year={project.year}
-                    />
-                    <Project_descripcion
-                        img_1={project.img_1}
-                        paragraph={project.paragraph}
-                    />
-                </div>
-            </main>
-        </>
-    );
+  return (
+    <>
+      <main>
+        <Header />
+        <div id="main--container">
+          <Project_header
+            title={project.title}
+            subtitle={project.subtitle}
+            repository_url={project.repository_url}
+            description={project.description}
+            category={project.category}
+            year={project.year}
+          />
+
+          <Project_descripcion content={project.content} />
+        </div>
+      </main>
+    </>
+  );
 }

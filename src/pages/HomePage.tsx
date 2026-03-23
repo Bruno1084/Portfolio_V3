@@ -11,24 +11,23 @@ import { Footer } from "../components/footer/Footer";
 import { useRevealOnScroll } from "../hooks/useRevealOnScroll";
 
 export function HomePage(): ReactNode {
-    useRevealOnScroll();
+  useRevealOnScroll();
 
-    return (
-        <>
-            <main>
-                <Header />
-                <div id="main--container">
-                    <Cv_Header />
-                    <About />
-                    <Experience />
-                    <Projects />
-                    <Education />
-                    <Stack />
-                    <Contact />
-                    <Footer />
-                </div>
-
-            </main>
-        </>
-    );
+  return (
+    <>
+      <main>
+        <Header />
+        <div id="main--container">
+          <Cv_Header />
+          <About />
+          <Experience />
+          <Projects />
+          <Education />
+          <Stack />
+          <Contact />
+          <Footer />
+        </div>
+      </main>
+    </>
+  );
 }

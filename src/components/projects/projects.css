@@ -1,68 +1,69 @@
 #projects {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .projects-title--container {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .projects-title--container > h4 {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .projects-box--container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .project-box--container {
-    border: 2px solid var(--fill-color);
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #111;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid var(--fill-color);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #111;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .project-box--container:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .project-box--container > a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-box-display {
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
 .project-box-display img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .project-box-display img.loaded {
-    opacity: 1;
+  opacity: 1;
 }
 
-
 .project-box-description {
-    border-top: 1px solid var(--fill-color);
-    padding: 12px;
+  border-top: 1px solid var(--fill-color);
+  padding: 12px;
 }
 
 .project-box-description > h5 {
-    font-size: clamp(0.95rem, 2.5vw, 1.05rem);
-    margin-bottom: 18px;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  margin-bottom: 18px;
 }
 
 .project-box-description > p {
-    color: var(--secondary-color);
-    font-size: clamp(0.85rem, 2.3vw, 0.95rem);
+  color: var(--secondary-color);
+  font-size: clamp(0.85rem, 2.3vw, 0.95rem);
 }

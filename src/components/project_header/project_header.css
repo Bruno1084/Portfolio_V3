@@ -1,62 +1,61 @@
 #projectHeader {
-    margin-bottom: 1.8rem;
+  margin-bottom: 1.8rem;
 }
 
 #projectHeader > .header-title {
-    margin-bottom: 1.8rem;
+  margin-bottom: 1.8rem;
 }
 
 #projectHeader > .header-title > h1 {
-    font-size: 1.2rem;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 #projectHeader > .header-link {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
 }
 
 #projectHeader > .header-link > a {
-    color: white;
+  color: white;
 }
 
 #projectHeader > .header-description {
-    margin-bottom: 1.8rem;
+  margin-bottom: 1.8rem;
 }
 
 #projectHeader > .header-description > p {
-    font-size: 0.95rem;
-    color: var(--secondary-color);
+  font-size: 0.95rem;
+  color: var(--secondary-color);
 }
 
 #projectHeader > .header-resume {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #projectHeader > .header-resume > .header-resume-box--container {
-    border-left: 1px solid var(--border-color);
-    color: var(--secondary-color);
-    padding: 0 1rem;
-    margin: 1rem 0;
+  border-left: 1px solid var(--border-color);
+  color: var(--secondary-color);
+  padding: 0 1rem;
+  margin: 1rem 0;
 }
 
-#projectHeader > .header-resume > .header-resume-box--container > p, h5 {
-    font-weight: 500;
-    padding: 4px 0;
-    font-size: 0.9rem;
+#projectHeader > .header-resume > .header-resume-box--container > p,
+h5 {
+  font-weight: 500;
+  padding: 4px 0;
+  font-size: 0.9rem;
 }
 
 #projectHeader > .header-resume > .header-resume-box--container > p {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 650px) {
-    #projectHeader > .header-resume {
-        display: flex;
-        flex-direction: column;
-    }
-
-
+  #projectHeader > .header-resume {
+    display: flex;
+    flex-direction: column;
+  }
 }

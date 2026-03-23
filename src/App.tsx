@@ -5,17 +5,17 @@ import { HomePage } from "./pages/HomePage";
 import { ProjectPage } from "./pages/ProjectPage";
 
 function App() {
-    useRevealOnScroll();
+  useRevealOnScroll();
 
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route index path='/' element={<HomePage />} />
-                {/* <Route path='projects' element={<ProjectsPage />} /> */}
-                <Route path='projects/:slug' element={<ProjectPage />} />
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index path="/" element={<HomePage />} />
+        {/* <Route path='projects' element={<ProjectsPage />} /> */}
+        <Route path="projects/:slug" element={<ProjectPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

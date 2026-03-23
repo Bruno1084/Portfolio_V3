@@ -3,6 +3,47 @@ import type { Project } from "../types/project";
 export const projects: Project[] = [
   {
     id: 1,
+    slug: "gardenads",
+    title: "GardenAds",
+    subtitle: "Performance marketing platform",
+    description: "Plataforma para conectar marketing y revenue real...",
+    repository_url: "...",
+    website_url: "...",
+    category: "Ecommerce Web",
+    year: 2023,
+    cover_image:
+      "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/GardenAds_img1.jpg",
+    content: [
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/GardenAds_img1.jpg",
+        alt: "Dashboard de GardenAds 1",
+      },
+      {
+        type: "paragraph",
+        text: "Muchas empresas invierten en Google y Meta Ads, pero enfrentan un problema común: Los números de conversiones no siempre coinciden con los pagos reales en Stripe.",
+      },
+      {
+        type: "list",
+        items: [
+          "Eventos capturados desde campañas publicitarias",
+          "Confirmaciones reales de pago vía Stripe",
+          "Validación server-side para mejorar la atribución",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "El resultado: decisiones de marketing basadas en revenue real, no en estimaciones.",
+      },
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/GardenAds_img2.jpg",
+        alt: "Dashboard de GardenAds 2",
+      },
+    ],
+  },
+  {
+    id: 2,
     slug: "ncwings",
     title: "NCWings",
     subtitle: "Web de compra de pasajes",
@@ -12,12 +53,22 @@ export const projects: Project[] = [
     website_url: "",
     category: "Reserva de Pasajes",
     year: 2024,
-    paragraph:
-      "NCWings fue desarrollado como un proyecto enfocado en simular el funcionamiento de una aerolínea. Permite a los usuarios explorar destinos, seleccionar vuelos y realizar reservas de manera intuitiva. El proyecto me permitió trabajar sobre la organización de vistas, la lógica de negocio y la estructura general de una aplicación web orientada al usuario final.",
-    img_1: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/NCWings_img1.jpg",
+    cover_image:
+      "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/NCWings_img1.jpg",
+    content: [
+      {
+        type: "paragraph",
+        text: "NCWings fue desarrollado como un proyecto enfocado en simular el funcionamiento de una aerolínea. Permite a los usuarios explorar destinos, seleccionar vuelos y realizar reservas de manera intuitiva. El proyecto me permitió trabajar sobre la organización de vistas, la lógica de negocio y la estructura general de una aplicación web orientada al usuario final.",
+      },
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/NCWings_img1.jpg",
+        alt: "Dashboard de NCWings",
+      },
+    ],
   },
   {
-    id: 2,
+    id: 3,
     slug: "stockapp",
     title: "StockApp",
     subtitle: "Aplicación de manejo de stock",
@@ -27,12 +78,22 @@ export const projects: Project[] = [
     website_url: "",
     category: "Aplicación de Stock",
     year: 2024,
-    paragraph:
-      "StockApp es una aplicación desarrollada para facilitar la gestión de productos, permitiendo registrar ingresos, egresos y consultar el estado del inventario. El proyecto se enfocó en la lógica de negocio y la persistencia de datos, reforzando conceptos clave de programación estructurada y orientación a objetos.",
-    img_1: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/StockApp_img1.jpg",
+    cover_image:
+      "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/StockApp_img1.jpg",
+    content: [
+      {
+        type: "paragraph",
+        text: "StockApp es una aplicación desarrollada para facilitar la gestión de productos, permitiendo registrar ingresos, egresos y consultar el estado del inventario. El proyecto se enfocó en la lógica de negocio y la persistencia de datos, reforzando conceptos clave de programación estructurada y orientación a objetos.",
+      },
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/StockApp_img1.jpg",
+        alt: "Dashboard de StockApp",
+      },
+    ],
   },
   {
-    id: 3,
+    id: 4,
     slug: "verydeli",
     title: "VeryDeli",
     subtitle: "Sistema de envíos",
@@ -42,12 +103,22 @@ export const projects: Project[] = [
     website_url: "",
     category: "Web de Mudanzas",
     year: 2024,
-    paragraph:
-      "VeryDeli fue concebido como un sistema para centralizar la información relacionada con envíos y entregas. El proyecto aborda la organización de pedidos, el seguimiento de estados y la presentación clara de la información al usuario. Fue una experiencia clave para trabajar sobre estructuras escalables y separación de responsabilidades.",
-    img_1: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/VeryDeliWeb_img1.jpg",
+    cover_image:
+      "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/VeryDeliWeb_img1.jpg",
+    content: [
+      {
+        type: "paragraph",
+        text: "VeryDeli fue concebido como un sistema para centralizar la información relacionada con envíos y entregas. El proyecto aborda la organización de pedidos, el seguimiento de estados y la presentación clara de la información al usuario. Fue una experiencia clave para trabajar sobre estructuras escalables y separación de responsabilidades.",
+      },
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/VeryDeliWeb_img1.jpg",
+        alt: "Login de VeryDeli",
+      },
+    ],
   },
   {
-    id: 4,
+    id: 5,
     slug: "elbuhoweb",
     title: "ElBuho Web",
     subtitle: "Ecommerce de ropa",
@@ -57,8 +128,18 @@ export const projects: Project[] = [
     website_url: "",
     category: "Ecommerce Web",
     year: 2023,
-    paragraph:
-      "El Buho Web es un ecommerce desarrollado con el objetivo de simular una tienda online de ropa. Incluye vistas de productos, estructura de catálogo y una experiencia de navegación orientada al usuario. El proyecto me permitió profundizar en diseño responsive, organización de componentes y presentación visual de contenido.",
-    img_1: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/ElBuhoWeb_img1.jpg",
+    cover_image:
+      "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/ElBuhoWeb_img1.jpg",
+    content: [
+      {
+        type: "paragraph",
+        text: "El Buho Web es un ecommerce desarrollado con el objetivo de simular una tienda online de ropa. Incluye vistas de productos, estructura de catálogo y una experiencia de navegación orientada al usuario. El proyecto me permitió profundizar en diseño responsive, organización de componentes y presentación visual de contenido.",
+      },
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/ElBuhoWeb_img1.jpg",
+        alt: "Dashboard de ElBuho",
+      },
+    ],
   },
 ];
