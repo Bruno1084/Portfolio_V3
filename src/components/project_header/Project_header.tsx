@@ -5,6 +5,7 @@ interface project {
   title: string;
   subtitle: string;
   repository_url: string;
+  website_url: string;
   description: string;
   category: string;
   year: number;
@@ -20,6 +21,10 @@ export function Project_header(project: project): ReactNode {
       </div>
       <div className="header-link">
         <a href={project.repository_url}>Repository</a>
+        
+        {
+          project.website_url && <a href={project.website_url}> Website</a>
+        }
       </div>
       <div className="header-description">
         <p>{project.description}</p>
