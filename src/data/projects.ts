@@ -7,10 +7,10 @@ export const projects: Project[] = [
     title: "GardenAds",
     subtitle: "Performance marketing platform",
     description: "Plataforma para conectar marketing y revenue real...",
-    repository_url: "...",
-    website_url: "...",
+    repository_url: "https://github.com/Bruno1084/Portfolio_V3",
+    website_url: "https://s02-26-equipo-03-web-app-developmen-green.vercel.app",
     category: "Ecommerce Web",
-    year: 2023,
+    year: 2026,
     cover_image:
       "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/GardenAds_img1.jpg",
     content: [

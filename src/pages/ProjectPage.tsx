@@ -23,6 +23,7 @@ export function ProjectPage(): ReactNode {
             title={project.title}
             subtitle={project.subtitle}
             repository_url={project.repository_url}
+            website_url={project.website_url}
             description={project.description}
             category={project.category}
             year={project.year}
