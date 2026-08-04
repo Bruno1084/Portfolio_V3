@@ -43,7 +43,40 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 1,
+    slug: "ayudahipodromos",
+    title: "Ayuda Hipodromos",
+    subtitle: "Web de Concientización",
+    description: "Web de divulgación de distintas causas sociales...",
+    repository_url: "https://github.com/myjchamp/AyudaHipodromos",
+    website_url: "https://ayudahipodromos.web.app/index.html",
+    category: "Divulgación Social",
+    year: 2026,
+    cover_image:
+      "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/AyudaHipodromos_img1.jpg",
+    content: [
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/AyudaHipodromos_img1.jpg",
+        alt: "AyudaHipodromos Dashboard",
+      },
+      {
+        type: "paragraph",
+        text: "AyudaHipodromos surge de un movimiento en redes para difundir diferentes causas beneficas relacionadas a distintos hipodromos tanto de Argentina como de otros paises.",
+      },
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/AyudaHipodromos_img2.jpg",
+        alt: "Dashboard de GardenAds 2",
+      },
+      {
+        type: "paragraph",
+        text: "Yo al igual que los otros dos participantes conocimos la propuesta por medio de redes sociales, y al ver que había una necesidad de organizar toda la información en un solo lugar, decidimos desarrollar esta sencilla página web. Nuestro objetivo fue presentar la información lo más clara posible, ayudar a contactar con los organizadores de cada causa y crear un espacio para dar creditos a la comunidad de artistas, divulagadores y usuarios.",
+      },
+    ],
+  },
+  {
+    id: 3,
     slug: "ncwings",
     title: "NCWings",
     subtitle: "Web de compra de pasajes",
@@ -68,7 +101,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     slug: "stockapp",
     title: "StockApp",
     subtitle: "Aplicación de manejo de stock",
@@ -93,7 +126,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     slug: "verydeli",
     title: "VeryDeli",
     subtitle: "Sistema de envíos",
@@ -118,7 +151,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     slug: "elbuhoweb",
     title: "ElBuho Web",
     subtitle: "Ecommerce de ropa",
