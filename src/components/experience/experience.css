@@ -15,10 +15,14 @@
   border-left: 1px solid var(--border-color);
 }
 
+.experience-box--container {
+  padding-bottom: 1.8rem;
+}
+
 .experience-box-tittle--container {
   display: grid;
   gap: 2px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .experience-box-ubication > p {
@@ -52,6 +56,6 @@
 .experience-box-description--container > ul {
   color: var(--secondary-color);
   display: grid;
-  gap: 4px;
+  gap: 1rem;
   font-size: 0.95rem;
 }
