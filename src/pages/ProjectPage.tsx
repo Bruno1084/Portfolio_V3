@@ -4,6 +4,7 @@ import { Project_descripcion } from "../components/project_description/Project_d
 import { Project_header } from "../components/project_header/Project_header";
 import { Navigate, useParams } from "react-router-dom";
 import { projects } from "../data/projects";
+import { Footer } from "../components/footer/Footer";
 
 export function ProjectPage(): ReactNode {
   const { slug } = useParams<{ slug: string }>();
@@ -32,6 +33,8 @@ export function ProjectPage(): ReactNode {
           <Project_descripcion content={project.content} />
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }

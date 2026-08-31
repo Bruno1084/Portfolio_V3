@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { experiences } from "../../data/experience";
 import "./experience.css";
 
 export function Experience(): ReactNode {
@@ -8,29 +9,31 @@ export function Experience(): ReactNode {
         <h4>Experiencia</h4>
       </div>
       <div className="experience--container">
-        <div className="experience-box--container">
-          <div className="experience-box-tittle--container">
-            <div className="experience-box-ubication">
-              <p>Remoto</p>
+        {experiences.map((experience) => (
+          <div key={experience.id} className="experience-box--container">
+            <div className="experience-box-tittle--container">
+              <div className="experience-box-ubication">
+                <p>{experience.location}</p>
+              </div>
+              <div className="experience-box-company">
+                <h4>{experience.companyName}</h4>
+                <p>
+                  {experience.startDate} - {experience.finishDate}
+                </p>
+              </div>
+              <div className="experience-box-position">
+                <p>{experience.role}</p>
+              </div>
             </div>
-            <div className="experience-box-company">
-              <h4>Integrity Solutions</h4>
-              <p>Enero 2024 - Agosto 2024</p>
-            </div>
-            <div className="experience-box-position">
-              <p>Desarrollador Frontend</p>
+            <div className="experience-box-description--container">
+              <ul>
+                {experience.description.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </div>
           </div>
-          <div className="experience-box-description--container">
-            <ul>
-              <li>
-                Participé en la migración de software legado a la web.
-                Implementación de interfaces responsivas y componentes
-                reutilizables.
-              </li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

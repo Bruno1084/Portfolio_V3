@@ -12,10 +12,11 @@ export function About(): ReactNode {
           Graduado de la Universidad Nacional de San Luis como Técnico en Web.
         </p>
         <p>
-          Soy Desarrollador Fullstack con experiencia en Javascript, Typescript,
-          React, Node.js y MySQL. Desarrollo de aplicaciones web, aplicaciones
-          de escritorio, diseño de base de datos, migración de software legado.
-          Trabajo colaborativo y orientación a resolución de problemas.
+          Desarrollador Fullstack con experiencia en el diseño de aplicaciones
+          web escalables, integración de servicios IA y migración de sistemas
+          legacy. Experiencia colaborando en el liderazgo de equipos ágiles y
+          entregando arquitecturas orientadas al rendimiento e impacto de
+          negocio.
         </p>
       </div>
     </section>
