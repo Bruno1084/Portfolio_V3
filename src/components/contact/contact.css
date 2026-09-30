@@ -21,7 +21,7 @@ textarea {
   width: 100%;
   border-radius: 6px;
   height: 40px;
-  color: white;
+  color: var(--primary-color);
   background-color: var(--fill-color);
   border: 1px solid var(--border-color);
   padding-left: 0.8rem;
@@ -37,12 +37,12 @@ textarea {
 
 .contact-form > div > .contact-form-input-submit {
   font-size: 1.2rem;
-  background-color: white;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--background-color);
   transition: 0.3s ease-in-out;
 }
 
 .contact-form > div > .contact-form-input-submit:hover {
   cursor: pointer;
-  background-color: #a8a9a9;
+  background-color: var(--secondary-color);
 }

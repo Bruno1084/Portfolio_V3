@@ -37,10 +37,11 @@
 }
 
 .stack-item--container:hover .stack-item-icon--container {
-  border-color: #444444;
+  border-color: var(--hover-border-color);
 }
 
 .stack-item-icon--container svg {
+  fill: var(--primary-color);
   width: 30px;
   height: 30px;
 }

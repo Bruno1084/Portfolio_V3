@@ -1,11 +1,14 @@
 import type { ReactNode } from "react";
+import { useLanguage } from "../../hooks/useLanguage";
 import "./stack.css";
 
 export function Stack(): ReactNode {
+  const { t } = useLanguage();
+
   return (
     <section id="stack" className="reveal">
       <div className="stack-tittle--container">
-        <h4>Stack de Tecnologías</h4>
+        <h4>{t.stack.title}</h4>
       </div>
       <div className="stack--container">
         <div className="stack-item--container">

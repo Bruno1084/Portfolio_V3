@@ -1,7 +1,10 @@
 import { useState, type ReactNode } from "react";
+import { useLanguage } from "../../hooks/useLanguage";
+import { Lazy_image } from "../lazy_image/Lazy_image";
 import "./cv_header.css";
 
 export function Cv_Header(): ReactNode {
+  const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
 
   const email: string = "sosabruno3384@gmail.com";
@@ -22,11 +25,15 @@ export function Cv_Header(): ReactNode {
       <div className="cv_header-row cv_header-row-1">
         <div className="cv_header-col-1">
           <div className="cv_header_img--container">
-            <img src="/Profile-icon.jpg" alt="profile_img" />
+            <Lazy_image
+              src="/Profile-icon.jpg"
+              alt={t.cvHeader.profileAlt}
+              loading="eager"
+            />
           </div>
           <div className="cv_header-tittle--container">
             <h3>Bruno Sosa</h3>
-            <h2>Desarrollador de Software</h2>
+            <h2>{t.cvHeader.role}</h2>
             <div className="cv_header-tittle-ubication--container">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,9 +52,9 @@ export function Cv_Header(): ReactNode {
 
         <div className="cv_header-col-2">
           <a href="/CV_BrunoSosa.pdf" download={"CV_BrunoSosa.pdf"}>
-            Descargar CV
+            {t.cvHeader.downloadCv}
           </a>
-          <a href="mailto:sosabruno3384@gmail.com">Contáctame</a>
+          <a href="mailto:sosabruno3384@gmail.com">{t.cvHeader.contactMe}</a>
         </div>
       </div>
 
@@ -70,7 +77,7 @@ export function Cv_Header(): ReactNode {
               </svg>
             )}
 
-            {copied ? "Copiado!" : email}
+            {copied ? t.cvHeader.copied : email}
           </a>
         </div>
         <div className="cv_header-row-2-socials--container">
