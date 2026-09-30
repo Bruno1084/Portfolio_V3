@@ -1,9 +1,31 @@
 :root {
+  color-scheme: dark;
   --primary-color: white;
   --secondary-color: #a8a9a9;
   --background-color: #131313;
   --fill-color: #252425;
   --border-color: #373637;
+  --hover-border-color: #444444;
+  --card-color: #111;
+  --modal-color: #242424;
+  --modal-button-color: #111;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --shadow-color: rgba(0, 0, 0, 0.35);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --primary-color: #131313;
+  --secondary-color: #5f6061;
+  --background-color: #fafafa;
+  --fill-color: #ececec;
+  --border-color: #d9d8d9;
+  --hover-border-color: #bdbcbd;
+  --card-color: #fff;
+  --modal-color: #fff;
+  --modal-button-color: #ececec;
+  --overlay-color: rgba(0, 0, 0, 0.35);
+  --shadow-color: rgba(0, 0, 0, 0.12);
 }
 
 @font-face {
@@ -52,6 +74,9 @@ html {
 body {
   background-color: var(--background-color);
   color: var(--primary-color);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 main {

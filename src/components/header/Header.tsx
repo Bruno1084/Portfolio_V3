@@ -1,29 +1,39 @@
 import { useState, type ReactNode } from "react";
+import { useLanguage } from "../../hooks/useLanguage";
 import "./header.css";
 
 export function Header(): ReactNode {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
 
+  const navLinks = [
+    { href: "/#cv_header", label: t.header.nav.intro },
+    { href: "/#about", label: t.header.nav.about },
+    { href: "/#experience", label: t.header.nav.experience },
+    { href: "/#projects", label: t.header.nav.projects },
+    { href: "/#education", label: t.header.nav.education },
+    { href: "/#stack", label: t.header.nav.stack },
+    { href: "/#contact", label: t.header.nav.contact },
+  ];
+
   return (
     <header>
       <nav className="navbar">
         <div className="navbar-desktop">
-          <a href="/#cv_header">Introducción</a>
-          <a href="/#about">Sobre Mi</a>
-          <a href="/#experience">Experiencia</a>
-          <a href="/#projects">Proyectos</a>
-          <a href="/#education">Educación</a>
-          <a href="/#stack">Tecnologías</a>
-          <a href="/#contact">Contacto</a>
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href}>
+              {link.label}
+            </a>
+          ))}
         </div>
 
         <button
           className="navbar-toggle"
           onClick={toggleMenu}
-          aria-label="Abrir menú"
+          aria-label={t.header.openMenu}
         >
           ☰
         </button>
@@ -34,29 +44,20 @@ export function Header(): ReactNode {
         />
 
         <div className={`navbar-modal ${isOpen ? "open" : ""}`}>
-          <button className="navbar-close" onClick={closeMenu}>
+          <button
+            className="navbar-close"
+            onClick={closeMenu}
+            aria-label={t.header.closeMenu}
+          >
             ✕
           </button>
 
           <div className="navbar-links">
-            <a href="/#cv_header" onClick={closeMenu}>
-              Introducción
-            </a>
-            <a href="/#about" onClick={closeMenu}>
-              Introducción
-            </a>
-            <a href="/#experience" onClick={closeMenu}>
-              Sobre Mi
-            </a>
-            <a href="/#education" onClick={closeMenu}>
-              Educación
-            </a>
-            <a href="/#stack" onClick={closeMenu}>
-              Tecnologías
-            </a>
-            <a href="/#contact" onClick={closeMenu}>
-              Contacto
-            </a>
+            {navLinks.map((link) => (
+              <a key={link.href} href={link.href} onClick={closeMenu}>
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
       </nav>

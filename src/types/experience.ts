@@ -1,11 +1,11 @@
-
+import type { Localized } from "../i18n/types";
 
 export interface Experience {
   id: number;
-  location: string;
+  location: Localized<string>;
   companyName: string;
   role: string;
-  startDate: string;
-  finishDate: string;
-  description: string[];
-};
+  startDate: Localized<string>;
+  finishDate: Localized<string>;
+  description: Localized<string>[];
+}

@@ -1,7 +1,10 @@
 import type { ReactNode } from "react";
+import { useLanguage } from "../../hooks/useLanguage";
 import "./contact.css";
 
 export function Contact(): ReactNode {
+  const { t } = useLanguage();
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
@@ -20,7 +23,7 @@ export function Contact(): ReactNode {
   return (
     <section id="contact" className="reveal">
       <div className="contact-tittle--container">
-        <h4>Contáctame</h4>
+        <h4>{t.contact.title}</h4>
       </div>
       <div className="contact--container">
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -29,7 +32,7 @@ export function Contact(): ReactNode {
               type="email"
               name="email"
               id="email"
-              placeholder="Tu correo"
+              placeholder={t.contact.emailPlaceholder}
               required
             />
           </div>
@@ -38,7 +41,7 @@ export function Contact(): ReactNode {
               type="text"
               name="subject"
               id="subject"
-              placeholder="Asunto"
+              placeholder={t.contact.subjectPlaceholder}
               required
             />
           </div>
@@ -46,13 +49,13 @@ export function Contact(): ReactNode {
             <textarea
               name="message"
               id="message"
-              placeholder="Mensaje"
+              placeholder={t.contact.messagePlaceholder}
             ></textarea>
           </div>
           <div>
             <input
               type="submit"
-              value="Enviar"
+              value={t.contact.submit}
               className="contact-form-input-submit"
             />
           </div>

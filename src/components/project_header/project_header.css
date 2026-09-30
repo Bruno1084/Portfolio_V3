@@ -18,7 +18,7 @@
 }
 
 #projectHeader > .header-link > a {
-  color: white;
+  color: var(--primary-color);
 }
 
 #projectHeader > .header-description {
