@@ -15,8 +15,8 @@ export function Projects(): ReactNode {
       </div>
       <div className="projects-box--container">
         {projects.map((project) => (
-          <div className="project-box--container" key={project.id}>
-            <Link to={`/projects/${project.slug}`} key={project.id}>
+          <div className="project-box--container" key={project.slug}>
+            <Link to={`/projects/${project.slug}`} key={project.slug}>
               <div className="project-box-display">
                 <Lazy_image
                   src={project.cover_image}

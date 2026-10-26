@@ -2,7 +2,103 @@ import type { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
-    id: 1,
+    slug: "industrio",
+    title: "Industrio",
+    subtitle: {
+      es: "Sistema SCADA con Factorio como planta simulada",
+      en: "SCADA system using Factorio as a simulated plant",
+    },
+    description: {
+      es: "Sistema SCADA de práctica que lee en tiempo real el estado de una fábrica de Factorio (hornos, producción, energía, trenes) y lo presenta como lo haría la supervisión de una planta industrial real.",
+      en: "Practice SCADA system that reads the live state of a Factorio factory (furnaces, production, power, trains) and presents it the way a real industrial plant supervision system would.",
+    },
+    repository_url: "https://github.com/Bruno1084/Industrio",
+    website_url: "",
+    category: { es: "SCADA Platform Simulator", en: "SCADA Platform Simulator" },
+    year: 2026,
+    cover_image:
+      "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/Industrio_img1.png",
+    content: [
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/Industrio_img1.png",
+        alt: {
+          es: "Banner de Industrio: SCADA, telemetría y control",
+          en: "Industrio banner: SCADA, telemetry and control",
+        },
+      },
+      {
+        type: "paragraph",
+        text: {
+          es: "Industrio es un proyecto de portfolio orientado a IoT/IIoT backend. Factorio cumple el rol de planta simulada y el foco está en la arquitectura de adquisición de datos, supervisión y control.",
+          en: "Industrio is a portfolio project focused on IoT/IIoT backend. Factorio plays the role of a simulated plant, and the focus is on the architecture for data acquisition, supervision and control.",
+        },
+      },
+      {
+        type: "paragraph",
+        text: {
+          es: "Objetivo: cerrar el lazo de control, de modo que un operador pueda supervisar y actuar sobre la fábrica (abrir interruptores, habilitar estaciones de tren, cambiar setpoints) desde una interfaz externa, con alarmas, historial y auditoría.",
+          en: "Objective: close the control loop, so an operator can both supervise and act on the factory (open switches, enable train stations, change setpoints) from an external interface, with alarms, history and auditing.",
+        },
+      },
+      {
+        type: "list",
+        items: [
+          {
+            es: "Mod de Factorio en Lua que exporta cada segundo un snapshot de la planta (hornos y producción) a un archivo JSON versionado",
+            en: "Factorio mod written in Lua that exports a snapshot of the plant (furnaces and production) to a versioned JSON file every second",
+          },
+          {
+            es: "Gateway en Node/TypeScript que valida la telemetría, calcula tasas de producción, detecta el estado del enlace y lo expone por HTTP y Server-Sent Events con un contrato propio",
+            en: "Node/TypeScript gateway that validates telemetry, computes production rates, detects the link state and exposes it over HTTP and Server-Sent Events with its own contract",
+          },
+          {
+            es: "HMI web en Next.js con vista general de planta en vivo, siguiendo los principios de HMI de alto rendimiento (ISA-101): gris para lo normal, color solo para lo anormal",
+            en: "Next.js web HMI with a live plant overview, following high-performance HMI principles (ISA-101): gray for normal, color only for abnormal",
+          },
+          {
+            es: "Manejo de pérdida de comunicación: si el juego se pausa o el gateway se cae, la HMI atenúa los valores como último valor conocido y se reconecta sola",
+            en: "Communication loss handling: if the game pauses or the gateway goes down, the HMI dims values as last known value and reconnects on its own",
+          },
+        ],
+      },
+      {
+        type: "image",
+        url: "https://raw.githubusercontent.com/Bruno1084/Portfolio_V3/images/public/projects/Industrio_img2.png",
+        alt: {
+          es: "UI de Industrio",
+          en: "Industrio UI",
+        },
+      },
+      {
+        type: "paragraph",
+        text: {
+          es: "Próximos pasos: servidor dedicado con canal de comandos (RCON), primeros controles remotos, historian de series temporales con alarmas, protocolos industriales (OPC-UA, MQTT Sparkplug B) e integración con AWS IoT Core.",
+          en: "Next steps: dedicated server with a command channel (RCON), first remote controls, a time-series historian with alarms, industrial protocols (OPC-UA, MQTT Sparkplug B) and AWS IoT Core integration.",
+        },
+      },
+      {
+        type: "paragraph",
+        text: {
+          es: "Tecnologías:",
+          en: "Technologies:",
+        },
+      },
+      {
+        type: "list",
+        items: [
+          { es: "Lua (mod de Factorio)", en: "Lua (Factorio mod)" },
+          { es: "Node.js y TypeScript", en: "Node.js and TypeScript" },
+          { es: "Next.js y React", en: "Next.js and React" },
+          {
+            es: "HTTP y Server-Sent Events (SSE)",
+            en: "HTTP and Server-Sent Events (SSE)",
+          },
+        ],
+      },
+    ],
+  },
+  {
     slug: "gardenads",
     title: "GardenAds",
     subtitle: {
@@ -13,7 +109,7 @@ export const projects: Project[] = [
       es: "Plataforma para conectar marketing y revenue real...",
       en: "Platform that connects marketing with real revenue...",
     },
-    repository_url: "https://github.com/Bruno1084/Portfolio_V3",
+    repository_url: "",
     website_url: "https://s02-26-equipo-03-web-app-developmen-green.vercel.app",
     category: { es: "Ecommerce Web", en: "E-commerce Website" },
     year: 2026,
@@ -70,7 +166,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 2,
     slug: "despensasystem",
     title: "Despensa System",
     subtitle: {
@@ -167,7 +262,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
     slug: "ayudahipodromos",
     title: "Ayuda Hipodromos",
     subtitle: { es: "Web de Concientización", en: "Awareness Website" },
@@ -215,7 +309,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 4,
     slug: "ncwings",
     title: "NCWings",
     subtitle: { es: "Web de compra de pasajes", en: "Flight booking website" },
@@ -245,7 +338,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 5,
     slug: "stockapp",
     title: "StockApp",
     subtitle: {
@@ -278,7 +370,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 6,
     slug: "verydeli",
     title: "VeryDeli",
     subtitle: { es: "Sistema de envíos", en: "Shipping system" },
@@ -308,7 +399,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 7,
     slug: "elbuhoweb",
     title: "ElBuho Web",
     subtitle: { es: "Ecommerce de ropa", en: "Clothing e-commerce" },

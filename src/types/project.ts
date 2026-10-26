@@ -6,7 +6,6 @@ export type ContentBlock =
   | { type: "list"; items: Localized<string>[] };
 
 export interface Project {
-  id: number;
   slug: string;
   title: string;
   subtitle: Localized<string>;
